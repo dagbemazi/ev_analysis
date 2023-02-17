@@ -3,6 +3,13 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# DB files
+*.sqlite
+*.sqbpro
+
+#Large JSON dataset
+*.json
+
 # C extensions
 *.so
 
