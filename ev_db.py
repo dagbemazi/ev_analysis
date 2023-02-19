@@ -15,18 +15,18 @@ def db_defaults():
         county_id INTEGER,
         city_id INTEGER,
         state_id INTEGER,
-        zip_code_id INTEGER
-        model_year_id INTEGER
-        make_id INTEGER
-        model_id INTEGER
-        ev_type_id INTEGER
-        cafv_type_id INTEGER
-        electric_range_id INTEGER
-        base_msrp_id INTEGER
-        legis_district_id INTEGER
-        dol_vehicle_id INTEGER
-        geocoded_column_id INTEGER
-        electric_utility_id INTEGER
+        zip_code_id INTEGER,
+        model_year_id INTEGER,
+        make_id INTEGER,
+        model_id INTEGER,
+        ev_type_id INTEGER,
+        cafv_type_id INTEGER,
+        electric_range_id INTEGER,
+        base_msrp_id INTEGER,
+        legis_district_id INTEGER,
+        dol_vehicle_id INTEGER,
+        geocoded_column_id INTEGER,
+        electric_utility_id INTEGER,
         census_tract_2020_id INTEGER
     );
 
@@ -97,7 +97,7 @@ def db_defaults():
     );
     CREATE TABLE IF NOT EXISTS GeocodedColumn (
         id INTEGER NOT NULL UNIQUE PRIMARY KEY AUTOINCREMENT,
-        geoceded_column TEXT UNIQUE  
+        geocoded_column TEXT UNIQUE  
     );
     CREATE TABLE IF NOT EXISTS ElectricUtility (
         id INTEGER NOT NULL UNIQUE PRIMARY KEY AUTOINCREMENT,
