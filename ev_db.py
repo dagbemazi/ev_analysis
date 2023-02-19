@@ -32,7 +32,7 @@ def db_defaults():
 
     CREATE TABLE IF NOT EXISTS Vin_1_10 (
         id INTEGER NOT NULL UNIQUE PRIMARY KEY AUTOINCREMENT,
-        vin_1_10 INTEGER
+        vin_1_10 TEXT UNIQUE
     );
 
     CREATE TABLE IF NOT EXISTS County (
